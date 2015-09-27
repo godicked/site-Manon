@@ -1,0 +1,393 @@
+@font-face {
+    font-family: "sunshine";
+    src: url('font.ttf');
+}
+
+body
+{
+    font-family: "sunshine";
+    color: black;
+}
+li, ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
+}
+.main-menu ul
+{
+    text-align: center;
+    list-style-type: none;
+}
+
+.main-menu ul a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-menu ul a li
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    display: table-cell;
+    font-size: 1.6em;
+    height: 50px;
+    text-align: center;
+    vertical-align:middle;
+    color: black;
+    
+}
+
+
+#m1
+{
+    background: url('texture1.jpg') no-repeat;
+    background-size: cover;
+    padding-left: 35px;
+
+}
+#m2
+{
+    background: url('texture2.jpg') center;
+    background-size: 200%;
+}
+#m3
+{
+    background: url('texture3.jpg') center;
+    background-size: 150%;
+}
+#m4
+{
+    background: url('texture4.jpg') center;
+    background-size: 170%;
+}
+#m5
+{
+    background: url('texture5.jpg') center;
+    background-size: 130%;
+}
+#m6
+{
+    background: url('texture6.jpg') center;
+    background-size: 200%;
+}
+#m7
+{
+    background: url('texture7.jpg') no-repeat right;
+    padding-right: 30px;
+    background-size: cover;
+}
+
+#banniere
+{
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    background: url('cover.jpg') no-repeat center;
+    margin-bottom: 36px;
+}
+
+#slider
+{
+    width: 100%;
+    height: 100%;
+}
+
+#mask
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+#image_container
+{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    /* La transition sur tout les navigateurs */
+           /* Chrome */ 
+          -webkit-transition-property:all;
+          -webkit-transition-duration:1s;
+
+           /* Firefox */ 
+          -moz-transition-property:all;
+          -moz-transition-duration:1s;
+          
+           /* Opera */ 
+          transition-property:all;
+          transition-duration:1s;
+
+}
+
+#image_container li
+{
+    float: left;
+    
+}
+
+#image_container img
+{
+    width: 492px;
+}
+
+.image1 #image_container 
+{
+    left: 0;
+}
+
+.image2 #image_container 
+{
+    left: -100%;
+}
+
+.image3 #image_container 
+{
+    left: -200%;
+}
+
+#dots
+{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#dots li
+{
+    margin-right: 15px;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+
+.boutton
+{
+    opacity: 0.4;
+}
+
+.bouttonActiv
+{
+    opacity: 1;
+}
+
+.slider-container
+{
+    position: relative;
+    display: inline-block;
+    height: 295px;
+    width: 492px;
+}
+
+.searchbar-container
+{
+    margin-left: 50px;
+}
+.searchbar-container input
+{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.66);
+    font-size: 13px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.searchbar-container input:focus
+{
+    outline: none;
+}
+
+.presentation-container
+{
+    padding-bottom: 26px;
+    position: relative;
+}
+
+.presentation-voile img
+{
+    position: relative;
+    z-index: 1;
+    width: 326px;
+    height: 47px;
+}
+.presentation-contenu
+{
+    margin-left: 32px;
+}
+.presentation-text
+{
+    margin-top: 20px;
+    
+    width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.presentation-text img
+{
+    width: 85px;
+    border-radius: 50%;
+    margin-left: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    float: right;
+}
+
+.presentation-text p
+{
+    font-size: 18px;
+}
+
+.mainContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 857px;
+    height: 100%;
+    overflow: auto;
+}
+hr
+{
+    border: 0;
+    height: 1px;
+    background: #d6d6d6;
+    width: 70%;
+}
+.presentation-frigo
+{
+    height: 100%;
+    overflow: auto;
+}
+.presentation-frigo h2
+{
+    padding-top: 15px;
+    text-align: center;
+    background: url('trait-turquoise.png') no-repeat;
+    font-size: 19px;
+    width: 237px;
+    height: 49px;
+    box-sizing:border-box;
+    font-weight: 500;
+    margin-bottom: -13px;
+}
+
+.presentation-frigo img
+{
+    float: left;
+}
+
+.presentation-frigo form
+{
+    margin-top: 32px;
+    float: left;
+}
+
+.presentation-frigo input
+{
+    font-size: 14px;
+    padding-left: 10px;
+    height: 41px;
+    width: 214px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #77cec4;
+    box-sizing:border-box;
+}
+
+.barre-v
+{
+    height: 100%;
+    width: 0px;
+    border-left: 1px solid #d6d6d6;
+    position: absolute;
+    left: 9px;
+    z-index: 0;
+}
+.presentation
+{
+    position: relative;
+    width: 326px;
+    float: right;
+    display: inline-block;
+    margin-top: 60px;
+}
+.social-icon
+{
+    text-align: center;
+}
+.whi-icon
+{
+    display: inline-block;
+    background: url("whi.png") no-repeat center;
+    width: 47px;
+    height: 48px;
+}
+.fb-icon
+{
+    margin-left: 10px;
+    display: inline-block;
+    background: url("fb.png") no-repeat center;
+    width: 47px;
+    height: 48px;
+}
+.mail-icon
+{
+    margin-left: 15px;
+    display: inline-block;
+    background: url("mail.png") no-repeat center;
+    width: 47px;
+    height: 48px;
+}
+
+.left-panel
+{
+    margin-top: 46px;
+    float: left;
+    width: 492px
+}
+.left-panel form
+{
+    margin-left: 20px;
+}
+.fleche-image
+{
+    margin-top: 18px;
+    margin-left: 80px;
+    margin-bottom: 18px;
+}
+.input-recette
+{
+    padding-left: 20px;
+    width: 238px;
+    height: 38px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.titre-trait-rouge
+{
+    margin-left: 10px;
+    margin-top: 46px;
+    text-align: center;
+    background: url('trait-rouge.png') no-repeat center;
+    width: 324px;
+    height: 51px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-weight: 500;
+}

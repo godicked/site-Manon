@@ -1,0 +1,10 @@
+<div id="slider" ng-class="sliderClass">
+    <div id="mask">
+        <ul id="image_container">
+            <li ng-repeat="image in sliderImages"><img ng-src="{{ image.link }}" /></li>
+        </ul>
+        <ul id="dots">
+        <li ng-repeat="image in sliderImages" ng-class="(actualImage == $index + 1) ? 'bouttonActiv' : 'boutton'" ng-click="changeImage($index + 1);" ></li>
+    </ul>
+    </div>
+</div>
