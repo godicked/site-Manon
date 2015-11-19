@@ -7,6 +7,10 @@ module.exports = function(app, passport) {
     app.get('/', function(req, res) {
         res.render('index.ejs'); // load the index.ejs file
     });
+    
+    app.get('/recette', function(req, res) {
+        res.render('recette.ejs');
+    });
 	
 	app.get('/admin', function(req, res){
 		res.render('admin.ejs');
