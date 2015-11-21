@@ -11,6 +11,9 @@ body
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ========================= menu bar css ==========================*/
+
 li, ul
 {
     list-style-type: none;
@@ -91,6 +94,8 @@ li, ul
     background-size: cover;
 }
 
+/* ========================= baniere css ==========================*/
+
 #banniere
 {
     margin-left: auto;
@@ -99,6 +104,9 @@ li, ul
     background: url('cover.jpg') no-repeat center;
     margin-bottom: 36px;
 }
+
+
+/* ========================= top wrapper css ==========================*/
 
 #top-wrapper-input-social-title
 {
@@ -171,6 +179,9 @@ li, ul
     margin-right: 22px;
 }
 
+
+/* ========================= wrapper presentation css ==========================*/
+
 #wrapper-image-presentation
 {
     margin-top: 20px;
@@ -179,8 +190,12 @@ li, ul
 
 #wrapper-image
 {
-    position: absolute;
     opacity: 0.6;
+}
+
+#wrapper-image img
+{
+    width: 100%;
 }
 
 #wrapper-presentation
@@ -191,4 +206,49 @@ li, ul
     text-align: center;
     top: 100px;
     font-size: 20px;
+}
+
+/* ========================= wrapper ingredient recette ==========================*/
+
+#wrapper-ingredients-etapes-images
+{
+   margin-top: 36px;
+}
+
+
+#wrapper-left-ingredients
+{
+    width: 265px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    box-sizing:border-box;
+}
+
+#ingredient-background
+{
+    margin-top: -26px;
+    padding: 0px 13px 20px 13px;
+    background: url("ingredient-fond.png") repeat; 
+}
+
+#wrapper-left-ingredients h2
+{
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+#ingredients-list
+{
+    text-align: left;
+}
+
+#ingredients-list hr
+{
+    border: 0;
+    height: 1px;
+    background: #bd775f;
 }
