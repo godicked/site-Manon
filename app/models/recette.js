@@ -5,14 +5,19 @@ var mongoose = require('mongoose');
 // define the schema for our user model
 var recetteSchema = mongoose.Schema({
 
+    id          : String,
     nom			: String,
-	duree		: Int,
-	prix		: Int,
-	description	: String,
-	logo 		: String,
-	images		: [String],
+    nbPersonne  : Int,
+    tmpRepos    : Int,
+    tmpCuisson  : Int,
+	tmpTotal	: Int,
+    niveau      : Int,
+    materiel    : [String],
+	imagePaysage: String,
+    description : String,
+	vignettes	: [String],
 	ingredients	: [String],
-	etapes		: [String]
+	recette		: String
 	
 });
 

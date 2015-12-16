@@ -3,6 +3,10 @@
     src: url('font.ttf');
 }
 
+@font-face {
+    font-family: "heart";
+    src: url('aimh.ttf');
+}
 body
 {
     font-family: "sunshine";
@@ -10,6 +14,7 @@ body
     color: black;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 /* ========================= menu bar css ==========================*/
@@ -177,6 +182,7 @@ li, ul
     height: 100%;
     margin-top: 87px;
     margin-right: 22px;
+    position: relative;
 }
 
 
@@ -186,6 +192,8 @@ li, ul
 {
     margin-top: 20px;
     position: relative;
+    height: 310px;
+    overflow: hidden;
 }
 
 #wrapper-image
@@ -204,8 +212,7 @@ li, ul
     display: inline-block;
     width: 100%;
     text-align: center;
-    top: 100px;
-    font-size: 20px;
+    top: 50px;
 }
 
 /* ========================= wrapper ingredient recette ==========================*/
@@ -213,6 +220,7 @@ li, ul
 #wrapper-ingredients-etapes-images
 {
    margin-top: 36px;
+    overflow: hidden;
 }
 
 
@@ -224,13 +232,15 @@ li, ul
     text-align: center;
     display: inline-block;
     box-sizing:border-box;
+    
 }
 
 #ingredient-background
 {
     margin-top: -26px;
     padding: 0px 13px 20px 13px;
-    background: url("ingredient-fond.png") repeat; 
+    background: url("ingredient-fond.png") repeat;
+    border-radius: 5%;
 }
 
 #wrapper-left-ingredients h2
@@ -251,4 +261,122 @@ li, ul
     border: 0;
     height: 1px;
     background: #bd775f;
+}
+
+#wrapper-right-etapes-vignette
+{
+    float: right;
+    width: 522px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#wrapper-vignette
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vignette
+{
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 10%;
+    margin: 25px;
+    position: relative;
+}
+
+#wrapper-etapes
+{
+    position: relative;
+}
+
+/* ========================= option button ==========================*/
+
+.change-button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.croix-rouge
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 25%;
+    float: right;
+}
+
+.croix-rouge-vignette
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.21);
+}
+
+
+#etapes-input
+{
+    width: 100%;
+    height: 250px;
+}
+
+pre
+{
+    font-family: inherit;
+}
+
+#option-presentation
+{
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #c3c3c3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    height: 311px;
+}
+
+#option-presentation li
+{
+    margin-top: 7px;
+}
+
+#option-title
+{
+    width: 300px;
+    height: 50px;
+    background-color:#cbcbcb;
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-top: 80px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+#option-vignette
+{
+    margin-top: 30px;
+    padding-top: 40px;
+    text-align: center;
+    height: 100px;
+    background-color: #cbcbcb;
+}
+
+/* ========================= coeur ==========================*/
+
+.heart
+{
+    font-family: "heart";
+    font-size: 24px;
 }
